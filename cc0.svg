@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 80" role="img" aria-labelledby="title">
+  <title id="title">Creative Commons CC0 1.0</title>
+  <rect x="1" y="1" width="150" height="78" rx="8" fill="#fcfaf6" stroke="#b8c2b5" stroke-width="2"/>
+  <circle cx="38" cy="40" r="25" fill="none" stroke="#577b69" stroke-width="3"/>
+  <text x="38" y="47" fill="#577b69" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">CC</text>
+  <text x="91" y="48" fill="#29352f" font-family="Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">0</text>
+  <text x="76" y="69" fill="#73766f" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.5" text-anchor="middle">PUBLIC DOMAIN</text>
+</svg>

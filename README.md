@@ -1,6 +1,6 @@
 # Evolução em três dimensões
 
-Apresentação web para a palestra **Evolução em três dimensões**, realizada para o Instituto Espírita Maria de Nazaré em 2 de novembro de 2026.
+Apresentação web sobre **Evolução em três dimensões**.
 
 A experiência explora a relação entre amor, sabedoria, caridade e humildade ao longo do tempo, por meio de um mapa tridimensional com uma espiral evolutiva.
 
@@ -25,6 +25,9 @@ Para este repositório, o endereço esperado é [https://deusanyjunior.github.io
 - [index.html](index.html) — conteúdo e estrutura da apresentação.
 - [styles.css](styles.css) — estilos, layout responsivo e apresentação visual.
 - [script.js](script.js) — desenho dos gráficos e acompanhamento da etapa ativa durante a rolagem.
+- [favicon.svg](favicon.svg) — ícone da página inspirado no gráfico em espiral.
+- [cc0.svg](cc0.svg) — selo visual da licença CC0 1.0.
+- [qrcode.png](qrcode.png) — QR code para acessar a apresentação pelo celular.
 - [instruções.md](instruções.md) — texto de referência e conteúdo-base da palestra.
 
 ## Tecnologias
