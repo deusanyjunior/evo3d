@@ -33,3 +33,7 @@ Para este repositório, o endereço esperado é [https://deusanyjunior.github.io
 ## Tecnologias
 
 HTML, CSS e JavaScript, sem framework ou processo de build.
+
+## Aviso
+
+Este projeto foi desenvolvido com auxílio de I.A. e de Inspirações de Amigos.
