@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f3ed" />
+    <meta
+      name="description"
+      content="Uma reflexão visual sobre amor, sabedoria, caridade e humildade ao longo do tempo."
+    />
+    <title>Evolução em três dimensões — Palestra</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a
+        class="wordmark"
+        href="#inicio"
+        aria-label="Evolução em três dimensões, início"
+        ><span class="mark">e³</span
+        ><span>Evolução em três dimensões<br />Evo3D</span></a
+      >
+      <a class="top-link" href="#jornada"
+        >A jornada <span aria-hidden="true">↘</span></a
+      >
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">PALESTRA · 02 NOVEMBRO 2026</p>
+          <h1 id="page-title">Evolução em<br /><em>três dimensões</em></h1>
+          <p class="hero-intro">
+            Uma jornada de crescimento que une aquilo que sentimos, aquilo que
+            compreendemos e aquilo que fazemos — ao longo do tempo.
+          </p>
+          <a class="button button-dark" href="#jornada"
+            >Começar a jornada <span aria-hidden="true">↓</span></a
+          >
+          <p class="host-note">Uma reflexão para a vida</p>
+        </div>
+        <div
+          class="hero-visual"
+          aria-label="Ilustração de uma espiral ascendendo entre os eixos de amor, sabedoria, caridade e humildade"
+        >
+          <div class="visual-glow"></div>
+          <svg
+            id="hero-chart"
+            class="chart chart-hero"
+            viewBox="0 0 640 400"
+            role="img"
+            aria-labelledby="chart-title chart-desc"
+          >
+            <title id="chart-title">Evolução em três dimensões</title>
+            <desc id="chart-desc">
+              Quatro direções representam amor, sabedoria, caridade e humildade.
+              O tempo é vertical; uma espiral indica a jornada de evolução.
+            </desc>
+            <defs>
+              <linearGradient id="spiralGradient" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#a9d8d1" />
+                <stop offset="55%" stop-color="#c09bda" />
+                <stop offset="100%" stop-color="#e4a77f" />
+              </linearGradient>
+              <linearGradient id="planeWash" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d9e3da" />
+                <stop offset="100%" stop-color="#e7d9e6" />
+              </linearGradient>
+            </defs>
+            <g id="hero-grid"></g>
+            <g id="hero-axes"></g>
+            <path id="hero-spiral" d="" />
+            <circle
+              id="hero-start"
+              class="spiral-start"
+              r="4"
+              cx="0"
+              cy="0"
+            ></circle>
+            <circle
+              id="hero-end"
+              class="spiral-end"
+              r="5"
+              cx="0"
+              cy="0"
+            ></circle>
+          </svg>
+          <div class="chart-caption">
+            <span class="caption-line"></span> Uma vida em movimento
+          </div>
+          <div class="chart-legend" aria-hidden="true">
+            <span><i class="legend-dot love"></i> amor</span
+            ><span><i class="legend-dot wisdom"></i> sabedoria</span
+            ><span><i class="legend-dot charity"></i> caridade</span
+            ><span><i class="legend-dot humility"></i> humildade</span>
+          </div>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 — 03</div>
+      </section>
+
+      <section class="intro-band" aria-label="Ideia central">
+        <p>
+          Não é uma linha reta. <span>É uma espiral:</span> a cada volta,
+          aprendemos a amar melhor, compreender mais e servir com mais presença.
+        </p>
+        <span class="band-ornament" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="journey" id="jornada" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <p class="eyebrow">A IDEIA, PASSO A PASSO</p>
+          <h2 id="journey-title">
+            Quatro virtudes.<br /><em>Um caminho de evolução.</em>
+          </h2>
+          <p class="section-lede">
+            Começamos observando cada direção, aproximamos os conceitos e, por
+            fim, vemos como se entrelaçam no tempo.
+          </p>
+        </div>
+
+        <div class="stage-sticky-header" aria-live="polite" aria-atomic="true">
+          <p class="stage-sticky-kicker" id="sticky-stage-kicker">
+            UMA DIMENSÃO · 01
+          </p>
+          <p class="stage-sticky-title" id="sticky-stage-title">Amor</p>
+        </div>
+
+        <div class="journey-layout">
+          <aside class="journey-visual">
+            <div class="visual-sticky">
+              <div class="visual-topline"><span>MAPA DA JORNADA</span></div>
+              <svg
+                id="journey-chart"
+                class="chart chart-journey"
+                viewBox="0 0 640 400"
+                role="img"
+                aria-label="Gráfico tridimensional interativo das virtudes ao longo do tempo"
+              >
+                <defs>
+                  <linearGradient
+                    id="spiralGradientJourney"
+                    x1="0"
+                    y1="1"
+                    x2="1"
+                    y2="0"
+                  >
+                    <stop offset="0%" stop-color="#a9d8d1" />
+                    <stop offset="55%" stop-color="#c09bda" />
+                    <stop offset="100%" stop-color="#e4a77f" />
+                  </linearGradient>
+                  <linearGradient
+                    id="planeWashJourney"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1"
+                  >
+                    <stop offset="0%" stop-color="#d9e3da" />
+                    <stop offset="100%" stop-color="#e7d9e6" />
+                  </linearGradient>
+                </defs>
+                <g id="journey-grid"></g>
+                <g id="journey-axes"></g>
+                <path id="journey-spiral" d=""></path>
+                <circle
+                  id="journey-start"
+                  class="spiral-start"
+                  r="4"
+                  cx="0"
+                  cy="0"
+                ></circle>
+                <circle
+                  id="journey-end"
+                  class="spiral-end"
+                  r="5"
+                  cx="0"
+                  cy="0"
+                ></circle>
+              </svg>
+              <p class="map-note">
+                <span class="note-mark">↗</span
+                ><span id="map-note-text"
+                  >Selecione uma etapa para destacar suas direções no
+                  mapa.</span
+                >
+              </p>
+            </div>
+          </aside>
+
+          <div class="journey-content">
+            <div class="reading-area">
+              <div id="content-cards" class="timeline">
+                <article class="quote-card" data-card="amor">
+                  <p class="card-label">A REGRA ÁUREA</p>
+                  <h4>
+                    Amar a Deus sob todas as coisas e ao próximo como a si mesmo
+                  </h4>
+                  <p class="source">
+                    Do livro "Caminho, verdade e vida" do Emmanuel, capítulo 41,
+                    "A regra áurea":
+                  </p>
+                  <blockquote>
+                    Diziam os <strong>gregos</strong>: “Não façais ao próximo o
+                    que não desejais receber dele.”
+                  </blockquote>
+                  <blockquote>
+                    Afirmavam os <strong>persas</strong>: “Fazei como quereis
+                    que se vos faça.”
+                  </blockquote>
+                  <blockquote>
+                    Declaravam os <strong>chineses</strong>: “O que não desejais
+                    para vós, não façais a outrem.”
+                  </blockquote>
+                  <blockquote>
+                    Recomendavam os <strong>egípcios</strong>: “Deixai passar
+                    aquele que fez aos outros o que desejava para si.”
+                  </blockquote>
+                  <blockquote>
+                    Doutrinavam os <strong>hebreus</strong>: “O que não
+                    quiserdes para vós, não desejeis para o próximo.”
+                  </blockquote>
+                  <blockquote>
+                    Insistiam os <strong>romanos</strong>: “A lei gravada nos
+                    corações humanos é amar os membros da sociedade como a si
+                    mesmo.”
+                  </blockquote>
+                  <blockquote>
+                    <strong>Jesus</strong> ensinou a regra áurea e a
+                    exemplificou, não com virtudes parciais, mas em plenitude de
+                    trabalho, abnegação e amor, à claridade das praças públicas.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="amor">
+                  <p class="card-label">ESPÍRITOS BENÉVOLOS</p>
+                  <h4>Quinta classe. Espíritos Benévolos</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Segundo, Capítulo I - Dos
+                    Espíritos, Item 108
+                  </p>
+                  <blockquote>
+                    Sua qualidade dominante é a bondade; gostam de prestar
+                    serviços aos homens e de os proteger; mas o seu saber é
+                    limitado: seu progresso realizou-se mais no sentido moral
+                    que no intelectual.
+                  </blockquote>
+                </article>
+
+                <article class="quote-card" data-card="sabedoria" hidden>
+                  <p class="card-label">INTELIGÊNCIA COMO MISSÃO</p>
+                  <h4>Missão do homem inteligente na terra</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Cap VII - Bem-Aventurados
+                    os Pobres de Espíritos, Item 13
+                  </p>
+                  <blockquote>
+                    Se Deus, nos seus desígnios, vos fez nascer num meio onde
+                    pudestes desenvolver a vossa inteligência, foi por querer
+                    que a usásseis <strong>em benefício de todos</strong>.
+                    Porque é uma missão que Ele vos dá, pondo em vossas mãos o
+                    instrumento com o qual podeis desenvolver, ao vosso redor,
+                    as inteligências retardatárias e conduzi-las a Deus. ... A
+                    inteligência é rica em méritos para o futuro, mas com a
+                    condição de ser bem empregada.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="sabedoria" hidden>
+                  <p class="card-label">VIDA ESPÍRITA</p>
+                  <h4>As percepções e os conhecimentos dos Espíritos</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Segundo, Capítulo VI - Vida
+                    Espírita, Pergunta 238
+                  </p>
+                  <p>
+                    Pergunta 238: As percepções e os conhecimentos dos Espíritos
+                    são ilimitados? Sabem eles todas as coisas?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: Quanto mais se aproximam da
+                    perfeição, mais sabem; se são superiores, sabem muito. Os
+                    Espíritos inferiores são mais ou menos ignorantes em todos
+                    os assuntos.
+                  </p>
+                </article>
+
+                <article class="quote-card" data-card="caridade" hidden>
+                  <p class="card-label">A CARIDADE SEGUNDO SÃO PAULO</p>
+                  <h4>A caridade é a mais excelente</h4>
+                  <p class="source">1 Corintios 13, 13</p>
+                  <blockquote>
+                    “Agora, portanto, permanecem fé, esperança, caridade, essas
+                    três coisas. A maior delas, porém, é a caridade.”
+                  </blockquote>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Cap XV - Fora da Caridade
+                    Não Há Salvação, Item 6 - A caridade segundo São Paulo
+                  </p>
+                  <blockquote>
+                    [Paulo] Coloca, assim, sem equívoco,
+                    <strong>a caridade acima da própria fé</strong>. Porque a
+                    caridade está ao alcance de todos, do ignorante e do sábio,
+                    do rico e do pobre; e porque independe de toda crença
+                    particular. E faz mais: define a verdadeira caridade;
+                    mostra-a, não somente na beneficência, mas no conjunto de
+                    todas as qualidades do coração, na bondade e na benevolência
+                    para com o próximo.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="caridade" hidden>
+                  <p class="card-label">FORA DA CARIDADE NÃO HÁ SALVAÇÃO</p>
+                  <h4>Uma máxima para a vida</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XV - Fora da
+                    Caridade Não Há Salvação, Item 10 - Fora da caridade não há
+                    salvação
+                  </p>
+                  <blockquote>
+                    Meus filhos, na máxima: Fora da caridade não há salvação,
+                    estão contidos os destinos do homem sobre a Terra e no céu.
+                    ... Fazei, pois, que ao vos vendo, se possa dizer que o
+                    verdadeiro espírita e o verdadeiros cristão são uma e a
+                    mesma coisa, porque
+                    <strong
+                      >todos os que praticam a caridade são discipulos de
+                      Jesus</strong
+                    >, qualquer que seja o culto a que pertençam.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="caridade" hidden>
+                  <p class="card-label">
+                    A CARIDADE EM PENSAMENTO, PALAVRAS E AÇÕES
+                  </p>
+                  <h4>Que a Mão Esquerda Não Saiba o que Faz a Direita</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XIII - Que a Mão
+                    Esquerda Não Saiba o que Faz a Direita, Item 10
+                  </p>
+                  <blockquote>
+                    Meus amigos, tenho ouvido muitos de vós dizerem: como posso
+                    fazer a caridade, se quase sempre não tenho sequer o
+                    necessário? A caridade, meus amigos, se faz de muitas
+                    maneiras. Podeix fazê-la em pensamento, em palavras e em
+                    ações.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="caridade" hidden>
+                  <p class="card-label">O SENTIDO DA CARIDADE</p>
+                  <h4>
+                    Qual o verdadeiro sentido da palavra caridade, como a
+                    entendia Jesus?
+                  </h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Terceiro, Capítulo XI - Lei de
+                    Justiça, Amor e Caridade, Pergunta 886
+                  </p>
+                  <p>
+                    Pergunta 886: Qual o verdadeiro sentido da palavra caridade,
+                    como a entendia Jesus?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: Benevolência para com todos,
+                    indulgência para as imperfeições alheias, perdão das
+                    ofensas.
+                  </p>
+                </article>
+
+                <article class="quote-card" data-card="humildade" hidden>
+                  <p class="card-label">SERVIR</p>
+                  <h4>Servir a Deus e ao próximo</h4>
+                  <p class="source">Mateus 20, 26-28</p>
+                  <blockquote>
+                    Aquele que quiser tornar-se grande entre vós seja aquele que
+                    serve, e o que quiser ser o primeiro dentre vós, seja o
+                    vosso servo. Desse modo, o Filho do Homem não veio para ser
+                    servido, mas para servir.
+                  </blockquote>
+                  <p class="source">Lucas 14, 11</p>
+                  <blockquote>
+                    Pois todo aquele que se exalta será humilhado, e quem se
+                    humilha será exaltado.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="humildade" hidden>
+                  <p class="card-label">HUMILDADE E CARIDADE</p>
+                  <h4>Bem-Aventurados os Pobres de Espíritos</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo VII -
+                    Bem-Aventurados os Pobres de Espíritos, Item 6
+                  </p>
+                  <blockquote>
+                    Estas máximas são consequências do princípio de humildade,
+                    que Jesus põe incessantemente como condição essencial da
+                    felicidade prometida aos eleitos do Senhor, nas seguintes
+                    palavras: "Bem-aventurados os pobres de espírito, porque
+                    deles é o Reino dos Céus.
+                  </blockquote>
+                </article>
+                <article class="quote-card" data-card="humildade" hidden>
+                  <p class="card-label">FAZEI O BEM COM HUMILDADE</p>
+                  <h4>Bem-Aventurados os Pobres de Espíritos</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo VII -
+                    Bem-Aventurados os Pobres de Espíritos, Item 11
+                  </p>
+                  <blockquote>
+                    E todos vós que sofreis as injustiças dos homens, sede
+                    indulgentes para as faltas dos vossos irmãos, lembrando que
+                    vós mesmos não estais sem manchas: isso é caridade, mas é
+                    também humildade. Se suportais calúnias, curvai a fronte
+                    diante da prova. Que vos importam as calúnias do mundo? Se
+                    vossa conduta é pura, Deus não pode vos recompensar?
+                    <strong
+                      >Suportar corajosamente as humilhações dos homens, é ser
+                      humilde e reconhecer que só Deus é grande e
+                      todo-poderoso</strong
+                    >. ... Despertai, meus irmãos, meus amigos! Que a voz dos
+                    Espíritos vos toque o coração. Sede generosos e caridosos,
+                    sem ostentação. Quer dizer: fazei o bem com humildade.
+                  </blockquote>
+                </article>
+
+                <article class="quote-card" data-card="amor-sabedoria" hidden>
+                  <p class="card-label">AMOR E SABEDORIA</p>
+                  <h4>Dos Espíritos</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Segundo, Capítulo I - Dos
+                    Espíritos, Pergunta 127
+                  </p>
+                  <p>
+                    Pergunta 127: Os Espíritos são criados iguais quanto às
+                    faculdades intelectuais?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: São criados iguais, mas não sabendo
+                    de onde vêm, é necessário que o livre-arbítrio se
+                    desenvolva. Progridem mais ou menos rapidamente, tanto em
+                    inteligência como em moralidade.
+                  </p>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Terceiro, Capítulo VIII - Lei do
+                    Progresso, Pergunta 780.
+                  </p>
+                  <p>
+                    Pergunta 780: O progresso moral segue sempre o progresso
+                    intelectual?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: É a sua consequência, mas não o
+                    segue sempre imediatamente.
+                  </p>
+                  <p>
+                    Pergunta 780-a: Como o progresso intelectual pode conduzir
+                    ao progresso moral?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: Dando a compreensão do bem e do mal,
+                    pois então o homem pode escolher. O desenvolvimento do
+                    livre-arbítrio segue-se ao desenvolvimento da inteligência e
+                    aumenta a responsabilidade do homem pelos seus atos.
+                  </p>
+                </article>
+
+                <article class="quote-card" data-card="amor-caridade" hidden>
+                  <p class="card-label">AMOR E CARIDADE</p>
+                  <h4>Muitos os Chamados e Poucos os Escolhidos</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XVIII - Muitos os
+                    Chamados e Poucos os Escolhidos, Item 9, Os que dizem:
+                    Senhor, Senhor!
+                  </p>
+                  <blockquote>
+                    Não espereis dobrar a justiça do Senhor pela multiplicidade
+                    de vossas palavras e de vossas genuflexões. A única via que
+                    está aberta, para alcançardes a graça em sua presença, é a
+                    prática sincera da lei do amor e da caridade.
+                  </blockquote>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XXI - Falsos
+                    Cristos e Falsos Profetas, Item 8
+                  </p>
+                  <blockquote>
+                    O Cristo não vos disse: "Conhece-se a árvore pelos seus
+                    frutos?" Se, pois, os frutos são amargos, considerais a
+                    árvore má; mas se são doces e saudáveis, dizeis:
+                    <strong
+                      >"Nada tão puro poderia sair de um tronco mau"</strong
+                    >. É assim, meus irmãos, que deveis julgar: são as obras que
+                    devem ser examinadas. Se os que se dizem revestidos do poder
+                    divino revelam todos os sinais de semelhante missão, ou
+                    seja, se eles possuem, no mais alto grau, as virtudes
+                    cristãs e eternas: a caridade, o amor, a indulgência, a
+                    bondade que concilia todos os corações; e se, confirmando as
+                    palavras, lhes juntam os atos; então podereis dizer: estes
+                    são realmente os enviados de Deus.
+                  </blockquote>
+                </article>
+
+                <article class="quote-card" data-card="amor-humildade" hidden>
+                  <p class="card-label">AMOR E HUMILDADE</p>
+                  <h4>Que a Mão Esquerda Não Saiba o que Faz a Direita</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XIII - Que a Mão
+                    Esquerda Não Saiba o que Faz a Direita, item 17
+                  </p>
+                  <blockquote>
+                    A piedade, quando profundamente sentida, é amor; o amor é
+                    devotamento; o devotamento é o olvido de si mesmo; e esse
+                    olvido, essa abnegação pelos infelizes, é a virtude por
+                    excelência, aquela mesma que o divino Messias praticou em
+                    toda sua vida, e ensinou na sua doutrina tão santa e
+                    sublime. ...
+                    <strong
+                      >O sentimento mais apropriado a vos fazer progredir,
+                      domando vosso egoísmo e vosso orgulho, aquele que dispõe
+                      vossa alma à humildade, à beneficência e ao amor ao
+                      próximo, é a piedade</strong
+                    >, essa piedade que vos comove até as fibras mais íntimas,
+                    diante do sofrimento de vossos irmãos, que vos leva a
+                    estender-lhes a mão caridosa e vos arranca lágrimas e
+                    simpatia.
+                  </blockquote>
+                </article>
+
+                <article
+                  class="quote-card"
+                  data-card="caridade-humildade"
+                  hidden
+                >
+                  <p class="card-label">CARIDADE E HUMILDADE</p>
+                  <h4>A via da salvação</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XV - Fora da
+                    Caridade Não Há Salvação, Item 5
+                  </p>
+                  <blockquote>
+                    Caridade e humildade, esta é a única via de salvação;
+                    egoísmo e orgulho, esta é a via da perdição. Esse princípio
+                    é formulado em termos precisos nestas palavras: "Amarás a
+                    Deus de toda a atua alma, e ao teu próximo como a ti mesmo;
+                    estes dois pensamentos contêm toda a lei e os profetas". E
+                    para que não houvesse equívoco na interpretação do amor de
+                    Deus e do próximo, temos ainda: "E o segundo [mandamento],
+                    semelhante a este, é [amarás ao teu próximo como a ti
+                    mesmo]", significando que
+                    <strong
+                      >não se pode verdadeiramente amar a Deus sem amar ao
+                      próximo, nem amar ao próximo sem amar a Deus</strong
+                    >, porque tudo quanto se faz contra o próximo, é contra Deus
+                    que se faz.
+                  </blockquote>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo VII -
+                    Bem-Aventurados os Pobres de Espírito, Item 11
+                  </p>
+                  <blockquote>
+                    Todos os Espíritos são da mesma essência, e todos os corpos
+                    foram feitos da mesma massa. Vossos títulos e vossos nomes
+                    em nada modificam; ficam no túmulo; não são eles que dão a
+                    felicidade prometida aos eleitos;
+                    <strong
+                      >a caridade e a humildade são os seus títulos de
+                      nobreza</strong
+                    >.
+                  </blockquote>
+                </article>
+
+                <article
+                  class="quote-card"
+                  data-card="sabedoria-caridade"
+                  hidden
+                >
+                  <p class="card-label">SABEDORIA E CARIDADE</p>
+                  <h4>Responsabilidade pelos bens divinos</h4>
+                  <p class="source">
+                    Evangelho Segundo o Espiritismo, Capítulo XVI - Servir a
+                    Deus e a Mamon, item 14
+                  </p>
+                  <blockquote>
+                    Que a fortuna provenha da vossa família, ou que a tenhais
+                    ganho pelo vosso trabalho, há uma coisa que jamais deveis
+                    esquecer: é que tudo vem de Deus, e tudo a Deus retorna.
+                    Nada vos pertence na Terra, nem sequer o vosso corpo: a
+                    morte vos despoja dele, como de todos os bens materiais.
+                    Sois depositários e não proprietários. ... Esqueceis que,
+                    pela riqueza,
+                    <strong
+                      >fostes investidos na sagrada condição de ministros da
+                      caridade na Terra, para serdes os seus dispensadores
+                      inteligentes</strong
+                    >?
+                  </blockquote>
+                </article>
+
+                <article
+                  class="quote-card"
+                  data-card="sabedoria-humildade"
+                  hidden
+                >
+                  <p class="card-label">SABEDORIA E HUMILDADE</p>
+                  <h4>Lei de Igualdade</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Terceiro, Capítulo IX - Lei de
+                    Igualdade, Pergunta 804
+                  </p>
+                  <p>
+                    Pergunta 804: Por que Deus não deu as mesmas aptidões a
+                    todos os homens?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: Deus criou todos os Espíritos
+                    iguais, mas cada um deles viveu mais ou menos tempo, e por
+                    conseguinte realizou mais ou menos aquisições; a diferença
+                    está no grau de experiência e na vontade, que é o
+                    livre-arbítrio: daí decorre que uns se aperfeiçoam mais
+                    rapidamente, o que lhes dá aptidões diversas.
+                    <strong
+                      >A mistura de aptidões é necessária a fim de que cada um
+                      possa contribuir para os desígnios da Providência</strong
+                    >, nos limites do desenvolvimento de suas forças físicas e
+                    intelectuais; o que um não faz, o outro faz, e é assim que
+                    <strong>cada um tem a sua função útil</strong>. Além disso,
+                    todos os mundos sendo solidários entre si, é necessário que
+                    os habitantes dos mundos superiores na sua maioria criados
+                    antes do vosso, venham habitar aqui para vos dar exemplo.
+                  </p>
+                </article>
+
+                <article class="quote-card" data-card="completo" hidden>
+                  <p class="card-label">AMOR, SABEDORIA, CARIDADE, HUMILDADE</p>
+                  <h4>A progressão no bem</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Terceiro, Capítulo XII -
+                    Perfeição Moral, Pergunta 918
+                  </p>
+                  <p>
+                    Pergunta 918: Por que sinais se pode reconhecer no homem o
+                    progresso real que deve elevar o seu Espírito na hierarquia
+                    espírita?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: O Espírito prova a sua elevação
+                    quando todos os atos da sua vida corpórea constituem a
+                    prática da lei de Deus e quando compreende por antecipação a
+                    vida espiritual.
+                  </p>
+                  <p>
+                    Comentário de Allan Kardec: O verdadeiro homem de bem é
+                    aquele que pratica a lei de justiça, de amor e de caridade
+                    na sua mais completa pureza. Se interrogar sua consciência
+                    sobre os atos praticados, perguntará se não violou essa lei,
+                    se não cometeu nenhum mal,
+                    <strong
+                      >se fez todo o bem que podia, se ninguém teve de se
+                      queixar dele</strong
+                    >, enfim, se fez para os outros tudo o que queria que lhe
+                    fizessem.
+                  </p>
+                </article>
+                <article class="quote-card" data-card="completo" hidden>
+                  <p class="card-label">O EIXO VERTICAL, O EIXO DO TEMPO</p>
+                  <h4>O tempo, a eternidade</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Quarto, Capítulo II - Penas e
+                    Gozos Futuros, Pergunta 1005.
+                  </p>
+                  <p>
+                    Pergunta 1005: Para o Espírito sofredor o tempo parece tão
+                    longo ou mais curto do que quando estava encarnado?
+                  </p>
+                  <p>
+                    Resposta dos Espíritos: Parece mais longo: o sono não existe
+                    para ele. Só para os Espíritos que atingiram um certo grau
+                    de purificação o tempo se apaga, por assim dizer, em face do
+                    infinito.
+                  </p>
+                </article>
+                <article class="quote-card" data-card="completo" hidden>
+                  <p class="card-label">SOBRE O ESPÍRITO MAIS EVOLUÍDO</p>
+                  <h4>Jesus, nosso maior exemplo</h4>
+                  <p class="source">
+                    Livro dos Espíritos, Livro Terceiro, Capítulo I - A Lei
+                    Divina ou Natural, Pergunta 625
+                  </p>
+                  <p>
+                    Pergunta 625: Qual o tipo mais perfeito que Deus ofereceu ao
+                    homem para lhe servir de guia e de modelo?
+                  </p>
+                  <p>Resposta dos Espíritos: Vede Jesus</p>
+                  <p>
+                    Comentário de Allan Kardec: Jesus é para o homem o tipo da
+                    perfeição moral a que pode aspirar a Humanidade na Terra.
+                    Deus nô-lo oferece como o mais perfeito modelo e a doutrina
+                    que ele ensinou é a mais pura expressão de sua lei, porque
+                    ele estava animado do espírito divino e
+                    <strong>o ser mais puro que já apareceu na Terra</strong>.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="closing-mark" aria-hidden="true">e³</div>
+        <p class="eyebrow">EVOLUÇÃO EM TRÊS DIMENSÕES</p>
+        <h2 id="closing-title">
+          Amor que compreende.<br /><em>Compreensão que serve.</em>
+        </h2>
+        <p>
+          Que cada passo no tempo nos aproxime de uma vida mais plena em amor,
+          sabedoria, caridade e humildade.
+        </p>
+        <a href="#inicio" class="back-top">Voltar ao início ↑</a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>Instituto Espírita Maria de Nazaré</span><span>02 · 11 · 2026</span
+      ><span>Uma reflexão sobre a evolução do espírito</span>
+    </footer>
+  </body>
+</html>
