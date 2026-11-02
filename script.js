@@ -14,7 +14,7 @@ const stages = [
     title: "Sabedoria",
     dimension: "UMA DIMENSÃO",
     axis: "wisdom",
-    symbol: "⌁",
+    symbol: "✧",
     summary: "Ao evitarmos a sabedoria, nos tornamos ignorantes.",
     note: "Compreender para escolher e agir melhor.",
     hint: "Uma direção de cada vez",
@@ -34,7 +34,7 @@ const stages = [
     title: "Humildade",
     dimension: "UMA DIMENSÃO",
     axis: "humility",
-    symbol: "⌄",
+    symbol: "≈",
     summary: "Ao evitar a humildade, somos orgulhosos.",
     note: "Servir, aprender e fazer o bem sem ostentação.",
     hint: "Uma direção de cada vez",
@@ -44,7 +44,7 @@ const stages = [
     title: "Amor + sabedoria",
     dimension: "DUAS DIMENSÕES",
     axes: ["love", "wisdom"],
-    symbol: "♡⌁",
+    symbol: "♡✧",
     summary:
       "A sabedoria nos ajuda a compreender o bem; o amor e o livre-arbítrio nos permitem escolhê-lo.",
     note: "Conhecer o bem também nos convida a escolhê-lo.",
@@ -66,7 +66,7 @@ const stages = [
     title: "Amor + humildade",
     dimension: "DUAS DIMENSÕES",
     axes: ["love", "humility"],
-    symbol: "♡⌄",
+    symbol: "♡≈",
     summary:
       "A compaixão pode domar o egoísmo e o orgulho, conduzindo ao devotamento e à humildade.",
     note: "Sair de si para acolher o outro.",
@@ -77,7 +77,7 @@ const stages = [
     title: "Caridade + humildade",
     dimension: "DUAS DIMENSÕES",
     axes: ["charity", "humility"],
-    symbol: "✳⌄",
+    symbol: "✳≈",
     summary:
       "Caridade e humildade se complementam como caminho oposto ao egoísmo e ao orgulho.",
     note: "Servir sem buscar reconhecimento.",
@@ -88,7 +88,7 @@ const stages = [
     title: "Sabedoria + caridade",
     dimension: "DUAS DIMENSÕES",
     axes: ["wisdom", "charity"],
-    symbol: "⌁✳",
+    symbol: "✧✳",
     summary:
       "A inteligência e os recursos que temos podem ser colocados a serviço da caridade.",
     note: "Partilhar com discernimento.",
@@ -99,7 +99,7 @@ const stages = [
     title: "Sabedoria + humildade",
     dimension: "DUAS DIMENSÕES",
     axes: ["wisdom", "humility"],
-    symbol: "⌁⌄",
+    symbol: "✧≈",
     summary:
       "Nossas diferentes aptidões e experiências permitem que cada pessoa contribua de forma útil.",
     note: "Saber que cada pessoa tem algo a oferecer.",
@@ -127,7 +127,7 @@ const axisConfig = [
       [0, 0, 0],
       [10, 0, 0],
     ],
-    labels: [{ text: "Amor", p: [10, 0, 0], anchor: "start", dx: 9, dy: 4 }],
+    labels: [{ text: "Amor", p: [10, 0, 0], anchor: "start", dx: 19, dy: 4 }],
   },
   {
     id: "wisdom",
@@ -138,7 +138,7 @@ const axisConfig = [
       [-10, 0, 0],
     ],
     labels: [
-      { text: "Sabedoria", p: [-10, 0, 0], anchor: "end", dx: -28, dy: 0 },
+      { text: "Sabedoria", p: [-10, 0, 0], anchor: "end", dx: -20, dy: -2 },
     ],
   },
   {
@@ -150,7 +150,7 @@ const axisConfig = [
       [0, 0, 10],
     ],
     labels: [
-      { text: "Caridade", p: [0, 0, 10], anchor: "start", dx: 5, dy: 0 },
+      { text: "Caridade", p: [0, 0, 10], anchor: "start", dx: 15, dy: -5 },
     ],
   },
   {
@@ -162,7 +162,7 @@ const axisConfig = [
       [0, 0, -10],
     ],
     labels: [
-      { text: "Humildade", p: [0, 0, -10], anchor: "end", dx: -5, dy: 5 },
+      { text: "Humildade", p: [0, 0, -10], anchor: "end", dx: -15, dy: 15 },
     ],
   },
   {
@@ -192,13 +192,16 @@ const svgElement = (name, attrs = {}) => {
 
 function drawChart(prefix, activeAxes = null, showSpiral = true) {
   const axesGroup = document.getElementById(`${prefix}-axes`);
+  const labelsGroup = document.getElementById(`${prefix}-labels`);
   const gridGroup = document.getElementById(`${prefix}-grid`);
   const path = document.getElementById(`${prefix}-spiral`);
   const start = document.getElementById(`${prefix}-start`);
   const end = document.getElementById(`${prefix}-end`);
-  if (!axesGroup || !gridGroup || !path || !start || !end) return;
+  if (!axesGroup || !labelsGroup || !gridGroup || !path || !start || !end)
+    return;
 
   axesGroup.replaceChildren();
+  labelsGroup.replaceChildren();
   gridGroup.replaceChildren();
   const planePoints = [
     [-10, 0, -10],
@@ -267,16 +270,21 @@ function drawChart(prefix, activeAxes = null, showSpiral = true) {
         class: `axis-label label-${axis.colorClass}${active ? " is-active" : " is-muted"}`,
       });
       label.textContent = item.text;
-      axesGroup.append(label);
+      labelsGroup.append(label);
     }
   }
 
   const total = 240;
   const startAngle = Math.atan2(5, -10);
+  const initialRadius = Math.sqrt(125);
   const spiralPoints = [];
   for (let i = 0; i <= total; i++) {
     const u = i / total;
-    const radius = Math.sqrt(125) * (1 - u);
+    const lowerRadiusBlend = Math.min(u / 0.2, 1);
+    const smoothBlend =
+      lowerRadiusBlend * lowerRadiusBlend * (3 - 2 * lowerRadiusBlend);
+    const lowerRadiusReduction = 0.7 * (1 - smoothBlend);
+    const radius = (initialRadius - lowerRadiusReduction) * (1 - u);
     const angle = startAngle + u * Math.PI * 6;
     spiralPoints.push(
       project([radius * Math.cos(angle), 15 * u, radius * Math.sin(angle)]),
