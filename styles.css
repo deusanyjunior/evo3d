@@ -183,3 +183,4 @@ body{font-size:20px}
 .reading-summary{font-size:max(20px,clamp(18px,1.25vw,21px))}
 .dimension-transition-description{font-size:max(20px,clamp(17px,1.35vw,22px))}
 svg title,svg desc{font-size:20px!important}
+@media(max-width:640px){.topbar .wordmark,.topbar .top-link{font-size:12px!important}.topbar .wordmark{gap:9px}}

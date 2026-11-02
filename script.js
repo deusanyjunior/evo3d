@@ -364,7 +364,7 @@ const stepSections = stages.map((stage, index) => {
   const headingText = document.createElement("div");
   const kicker = document.createElement("p");
   kicker.className = "eyebrow";
-  kicker.textContent = `${stage.dimension} · ${String(index + 1).padStart(2, "0")}`;
+  kicker.textContent = stage.dimension;
   const title = document.createElement("h3");
   title.id = `step-title-${stage.id}`;
   title.textContent = stage.title;
@@ -409,8 +409,7 @@ function setActiveStage(index) {
     if (sectionIndex === index) section.setAttribute("aria-current", "step");
     else section.removeAttribute("aria-current");
   });
-  document.getElementById("sticky-stage-kicker").textContent =
-    `${stage.dimension} · ${String(index + 1).padStart(2, "0")}`;
+  document.getElementById("sticky-stage-kicker").textContent = stage.dimension;
   document.getElementById("sticky-stage-title").textContent = stage.title;
   document.getElementById("map-note-text").textContent = stage.note;
   drawChart("journey", stage.axes || [stage.axis], stage.id === "completo");
