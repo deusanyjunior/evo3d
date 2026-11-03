@@ -402,6 +402,25 @@ const stepSections = stages.map((stage, index) => {
 });
 timeline.replaceChildren(...timelineItems);
 
+const mapToggle = document.getElementById("map-toggle");
+const mapContent = document.getElementById("journey-map-content");
+const mapToggleLabel = mapToggle.querySelector(".map-toggle-label");
+const mapToggleIcon = mapToggle.querySelector(".map-toggle-icon");
+const mobileMapQuery = window.matchMedia("(max-width: 640px)");
+function setMapExpanded(expanded) {
+  mapToggle.setAttribute("aria-expanded", String(expanded));
+  mapToggleLabel.textContent = expanded ? "Ocultar mapa" : "Mostrar mapa";
+  mapToggleIcon.textContent = expanded ? "−" : "+";
+  mapContent.hidden = !expanded;
+}
+mapToggle.addEventListener("click", () => {
+  setMapExpanded(mapToggle.getAttribute("aria-expanded") !== "true");
+});
+mobileMapQuery.addEventListener("change", (event) => {
+  setMapExpanded(!event.matches);
+});
+setMapExpanded(!mobileMapQuery.matches);
+
 let activeStageIndex = -1;
 function setActiveStage(index) {
   if (index === activeStageIndex) return;

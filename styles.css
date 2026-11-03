@@ -100,6 +100,7 @@ html body{font-size:17px}
 	body .journey-visual{position:sticky;top:0;z-index:6;align-self:stretch}
 	body .journey-visual .visual-sticky{position:relative;top:auto;padding:8px 12px;background:rgba(239,237,230,.97);backdrop-filter:blur(8px)}
 	body .journey-visual .chart-journey{max-height:210px;margin:5px 0 0}
+	.map-toggle{display:inline-flex}
 }
 
 :root{color-scheme:light;--paper:#f6f3ed;--paper-light:#fcfaf6;--ink:#252c28;--muted:#777a72;--line:#dedbd2;--green:#577b69;--pink:#d98ba4;--blue:#6c9fbd;--magenta:#b677aa;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--content:1160px}
@@ -120,7 +121,6 @@ html body{font-size:17px}
 .legend-dot.wisdom{background:var(--green)}
 .legend-dot.charity{background:var(--blue)}
 .legend-dot.humility{background:var(--magenta)}
-.hero-index{position:absolute;right:36px;bottom:25px;color:#99998f;font-size:9px;letter-spacing:.12em}
 .intro-band{min-height:129px;padding:30px 8%;display:flex;align-items:center;justify-content:center;gap:26px;background:#e9e9df}
 .intro-band p{max-width:710px;margin:0;text-align:center;color:#666c62;font-family:var(--serif);font-size:clamp(17px,2.1vw,23px);line-height:1.55}
 .intro-band p span{color:#496450;font-style:italic}
@@ -133,6 +133,11 @@ html body{font-size:17px}
 .journey-visual{min-width:0;align-self:stretch}
 .visual-sticky{position:sticky;top:36px;padding:21px 17px 18px;background:#efede6;border:1px solid #e3e0d8}
 .visual-topline{display:flex;justify-content:space-between;color:#878980;font-size:9px;letter-spacing:.14em}
+.map-toggle{align-items:center;gap:7px;padding:5px 0;border:0;background:transparent;color:#4d6654;font-size:10px;font-weight:600;letter-spacing:normal;cursor:pointer}
+.map-toggle:focus-visible{outline:2px solid #577b69;outline-offset:3px}
+.map-toggle-icon{font-size:15px;line-height:1}
+.journey-map-content[hidden]{display:none!important}
+@media(min-width:641px){.map-toggle{display:none}}
 .chart-journey{margin:20px 0 0}
 .map-note{display:flex;gap:10px;align-items:flex-start;margin:0;padding:13px 10px 0;border-top:1px solid #dddad1;color:#777a71;font-size:10px;line-height:1.6}
 .note-mark{color:#849487;font-size:14px}

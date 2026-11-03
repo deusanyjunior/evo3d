@@ -98,7 +98,6 @@
             ><span><i class="legend-dot humility"></i> humildade</span>
           </div>
         </div>
-        <div class="hero-index" aria-hidden="true">01 — 03</div>
       </section>
 
       <section class="intro-band" aria-label="Ideia central">
@@ -132,63 +131,77 @@
         <div class="journey-layout">
           <aside class="journey-visual">
             <div class="visual-sticky">
-              <div class="visual-topline"><span>MAPA DA JORNADA</span></div>
-              <svg
-                id="journey-chart"
-                class="chart chart-journey"
-                viewBox="0 0 640 400"
-                role="img"
-                aria-label="Gráfico tridimensional interativo das virtudes ao longo do tempo"
-              >
-                <defs>
-                  <linearGradient
-                    id="spiralGradientJourney"
-                    x1="0"
-                    y1="1"
-                    x2="1"
-                    y2="0"
-                  >
-                    <stop offset="0%" stop-color="#a9d8d1" />
-                    <stop offset="55%" stop-color="#c09bda" />
-                    <stop offset="100%" stop-color="#e4a77f" />
-                  </linearGradient>
-                  <linearGradient
-                    id="planeWashJourney"
-                    x1="0"
-                    y1="0"
-                    x2="1"
-                    y2="1"
-                  >
-                    <stop offset="0%" stop-color="#d9e3da" />
-                    <stop offset="100%" stop-color="#e7d9e6" />
-                  </linearGradient>
-                </defs>
-                <g id="journey-grid"></g>
-                <g id="journey-axes"></g>
-                <path id="journey-spiral" d=""></path>
-                <circle
-                  id="journey-start"
-                  class="spiral-start"
-                  r="4"
-                  cx="0"
-                  cy="0"
-                ></circle>
-                <circle
-                  id="journey-end"
-                  class="spiral-end"
-                  r="5"
-                  cx="0"
-                  cy="0"
-                ></circle>
-                <g id="journey-labels"></g>
-              </svg>
-              <p class="map-note">
-                <span class="note-mark">↗</span
-                ><span id="map-note-text"
-                  >Selecione uma etapa para destacar suas direções no
-                  mapa.</span
+              <div class="visual-topline">
+                <span>MAPA DA JORNADA</span>
+                <button
+                  class="map-toggle"
+                  id="map-toggle"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="journey-map-content"
                 >
-              </p>
+                  <span class="map-toggle-label">Ocultar mapa</span>
+                  <span class="map-toggle-icon" aria-hidden="true">−</span>
+                </button>
+              </div>
+              <div id="journey-map-content" class="journey-map-content">
+                <svg
+                  id="journey-chart"
+                  class="chart chart-journey"
+                  viewBox="0 0 640 400"
+                  role="img"
+                  aria-label="Gráfico tridimensional interativo das virtudes ao longo do tempo"
+                >
+                  <defs>
+                    <linearGradient
+                      id="spiralGradientJourney"
+                      x1="0"
+                      y1="1"
+                      x2="1"
+                      y2="0"
+                    >
+                      <stop offset="0%" stop-color="#a9d8d1" />
+                      <stop offset="55%" stop-color="#c09bda" />
+                      <stop offset="100%" stop-color="#e4a77f" />
+                    </linearGradient>
+                    <linearGradient
+                      id="planeWashJourney"
+                      x1="0"
+                      y1="0"
+                      x2="1"
+                      y2="1"
+                    >
+                      <stop offset="0%" stop-color="#d9e3da" />
+                      <stop offset="100%" stop-color="#e7d9e6" />
+                    </linearGradient>
+                  </defs>
+                  <g id="journey-grid"></g>
+                  <g id="journey-axes"></g>
+                  <path id="journey-spiral" d=""></path>
+                  <circle
+                    id="journey-start"
+                    class="spiral-start"
+                    r="4"
+                    cx="0"
+                    cy="0"
+                  ></circle>
+                  <circle
+                    id="journey-end"
+                    class="spiral-end"
+                    r="5"
+                    cx="0"
+                    cy="0"
+                  ></circle>
+                  <g id="journey-labels"></g>
+                </svg>
+                <p class="map-note">
+                  <span class="note-mark">↗</span
+                  ><span id="map-note-text"
+                    >Selecione uma etapa para destacar suas direções no
+                    mapa.</span
+                  >
+                </p>
+              </div>
             </div>
           </aside>
 
