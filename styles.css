@@ -160,6 +160,9 @@ html body{font-size:17px}
 .closing-qr{display:flex;width:fit-content;align-items:center;justify-content:center;gap:15px;margin:25px auto 0;color:#4e6856;font-size:12px;line-height:1.6}
 .closing-qr img{display:block;width:92px;height:92px}
 .footer-copy{display:flex;flex-direction:column;gap:4px}
+.footer-code{width:fit-content;color:#4e6856;font-size:12px;letter-spacing:0}
+.footer-code:hover{text-decoration:underline}
+.footer-code:focus-visible{outline:2px solid #577b69;outline-offset:3px}
 .footer-virtues{display:grid;grid-template-columns:repeat(2,1fr);gap:0 12px;align-items:center;justify-items:center;color:#607b68;font-family:var(--serif);font-size:24px;line-height:1}
 .site-footer{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
 .footer-license{justify-self:end}

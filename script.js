@@ -290,22 +290,27 @@ function drawChart(prefix, activeAxes = null, showSpiral = true) {
       project([radius * Math.cos(angle), 15 * u, radius * Math.sin(angle)]),
     );
   }
+  const origin = project([0, 0, 0]);
+  const firstSpiralPoint = spiralPoints[0];
+  const dx = firstSpiralPoint.x - origin.x;
+  const dy = firstSpiralPoint.y - origin.y;
+  const control = {
+    x: (origin.x + firstSpiralPoint.x) / 2 - dy * 0.12,
+    y: (origin.y + firstSpiralPoint.y) / 2 + dx * 0.12,
+  };
   path.setAttribute(
     "d",
-    spiralPoints
-      .map(
-        (p, index) =>
-          `${index === 0 ? "M" : "L"} ${p.x.toFixed(2)} ${p.y.toFixed(2)}`,
-      )
-      .join(" "),
+    `M ${origin.x.toFixed(2)} ${origin.y.toFixed(2)} Q ${control.x.toFixed(2)} ${control.y.toFixed(2)} ${firstSpiralPoint.x.toFixed(2)} ${firstSpiralPoint.y.toFixed(2)} ${spiralPoints
+      .slice(1)
+      .map((p) => `L ${p.x.toFixed(2)} ${p.y.toFixed(2)}`)
+      .join(" ")}`,
   );
   path.setAttribute("class", `spiral${showSpiral ? "" : " is-muted"}`);
   if (prefix === "journey")
     path.setAttribute("stroke", "url(#spiralGradientJourney)");
-  const first = spiralPoints[0];
   const last = spiralPoints[spiralPoints.length - 1];
-  start.setAttribute("cx", first.x);
-  start.setAttribute("cy", first.y);
+  start.setAttribute("cx", origin.x);
+  start.setAttribute("cy", origin.y);
   end.setAttribute("cx", last.x);
   end.setAttribute("cy", last.y);
 }
